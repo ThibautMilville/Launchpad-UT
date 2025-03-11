@@ -1,12 +1,12 @@
 import {ApolloClient, InMemoryCache, createHttpLink} from '@apollo/client'
 import {setContext} from '@apollo/client/link/context'
-import axios from 'axios'
+import { apiRequestor } from '../../utils/axiosInstanceHelper'
 
 const GRAPHQL_URL = 'https://staging.api.ultra.io/graphql'
 
 const getAuthToken = async () => {
   try {
-    const response = await axios.post('/api/auth/token')
+    const response = await apiRequestor.post('/auth/token')
     return response.data.access_token
   } catch (error) {
     console.error('Error getting auth token:', error)
