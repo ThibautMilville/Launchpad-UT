@@ -1,11 +1,12 @@
 import {NestFactory} from '@nestjs/core'
 import {AppModule} from './config/app.module'
 import {AppDataSource} from './ormconfig'
+import * as dotenv from 'dotenv';
 
 async function bootstrap() {
+  dotenv.config();
   try {
     const app = await NestFactory.create(AppModule)
-
     try {
       await AppDataSource.initialize()
     } catch (dbError) {

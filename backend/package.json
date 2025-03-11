@@ -23,6 +23,7 @@
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/typeorm": "^11.0.0",
+    "axios": "^1.8.2",
     "glob": "^11.0.1",
     "lru-cache": "^11.0.2",
     "reflect-metadata": "^0.2.2",

@@ -3,7 +3,7 @@ import { useFactory } from '../hooks/useFactory'
 import { formatDate } from '../utils/formatHelper'
 
 function FactoryTestPage() {
-  const [factoryId, setFactoryId] = useState('2160')
+  const [factoryId, setFactoryId] = useState('7')
   const { factory, loading, error } = useFactory(factoryId)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
