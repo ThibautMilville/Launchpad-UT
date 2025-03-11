@@ -22,10 +22,12 @@ function App() {
           <Route path='/collections' element={<CollectionsPage />} />
           <Route path='/collection/:id' element={<CollectionDetailsPage />} />
           <Route path='/mint/:category/:id' element={<MintPage />} />
-          <Route path='/factory-test' element={<FactoryTestPage />} />
+          {/* Profile */}
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/my-collections' element={<MyCollectionsPage />} />
           <Route path='/transactions' element={<TransactionsPage />} />
+          {/* Test */}
+          <Route path='/factory-test' element={<FactoryTestPage />} />
         </Routes>
       </main>
       <Footer />

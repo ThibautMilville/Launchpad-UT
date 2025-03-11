@@ -25,4 +25,5 @@ dist-ssr
 
 # Package and config files
 .cert
+.env
 package-lock.json
